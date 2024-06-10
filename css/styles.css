@@ -1,0 +1,140 @@
+@font-face {
+    font-family: NorseBold;
+    src: url(../font/Norse-Bold.otf);
+    font-weight: bold;
+}
+
+html
+{
+    overflow: hidden;
+    font-family: system-ui;
+
+}
+
+
+
+
+.padding-left{
+    padding-left: 3rem;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.italic{
+    font-style: italic;
+}
+
+.main-container{
+    display: flex;
+    height: 100%;
+}
+
+.image-owner{
+    position: absolute;
+    bottom: 2rem;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+.underline{
+    text-decoration: underline white;
+}
+
+
+.main-container>:first-child{
+    position: relative;
+    caret-color: transparent;
+    flex: 2;
+
+    >img{
+        height:100%;
+        width: 100%;
+
+    }
+    >.image-container{
+        background-color: rgba(0,0,0,0.5);
+        position: absolute;
+        top: 15rem;
+        height: 15rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        font-family: NorseBold,system-ui;
+        color: white;
+        font-size: 6rem;
+
+        >img{
+            height: 100%;
+        }
+
+    }
+}
+
+.main-container >:last-child{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    >.up-text{
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        gap:1.5rem;
+        padding-right: 25%;
+    }
+}
+.form-container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    >div:first-child{
+        font-size: 1.5rem;
+        padding-top: 1rem;
+    }
+
+    >form{
+        display: flex;
+        flex-direction: column;
+        min-height: 0;
+        flex-wrap: wrap;
+        color: darkslategray;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        gap: 1rem;
+    }
+}
+.form-background{
+    margin-top: 5rem;
+    height: 30%;
+    box-shadow: 0 0 2px black;
+
+}
+.label-input{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+
+
+}
+input{
+    border: solid #E5E7EB 1px;
+    border-radius: 4px;
+    height: 2rem;
+}
+button{
+    margin-top: 100px
+}
+form{
+    border: solid red 10px;
+}
